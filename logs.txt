@@ -1,0 +1,101 @@
+2015-07-16T12:20:55.889995+00:00 heroku[slug-compiler]: Slug compilation finished
+2015-07-16T12:20:55.840218+00:00 heroku[api]: Release v3 created by anaidiazg@gmail.com
+2015-07-16T12:20:55.840218+00:00 heroku[api]: Deploy 19d165b by anaidiazg@gmail.com
+2015-07-16T12:20:58.279069+00:00 heroku[web.1]: Starting process with command `node ./bin/www`
+2015-07-16T12:20:59.755653+00:00 app[web.1]: Detected 512 MB available memory, 512 MB limit per process (WEB_MEMORY)
+2015-07-16T12:20:59.755716+00:00 app[web.1]: Recommending WEB_CONCURRENCY=1
+2015-07-16T12:21:00.596576+00:00 heroku[web.1]: State changed from starting to up
+2015-07-16T12:21:19.792357+00:00 heroku[router]: at=info method=GET path="/" host=quiz2-adg.herokuapp.com request_id=426d50a8-c99c-4a30-947f-1e933c503c13 fwd="91.117.38.72" dyno=web.1 connect=1ms service=29ms status=200 bytes=1516
+2015-07-16T12:21:19.985423+00:00 heroku[router]: at=info method=GET path="/stylesheets/wide.css" host=quiz2-adg.herokuapp.com request_id=1d13e49b-5c9b-44c3-8b0a-3448b0c9d130 fwd="91.117.38.72" dyno=web.1 connect=1ms service=34ms status=200 bytes=543
+2015-07-16T12:21:19.794244+00:00 app[web.1]: [0mGET / [32m200 [0m24.710 ms - 1320[0m
+2015-07-16T12:21:19.978872+00:00 app[web.1]: [0mGET /stylesheets/wide.css [32m200 [0m26.612 ms - 257[0m
+2015-07-16T12:21:19.978933+00:00 heroku[router]: at=info method=GET path="/stylesheets/smartphone.css" host=quiz2-adg.herokuapp.com request_id=9355ebab-e87b-4ff3-a9fe-b332e50083ab fwd="91.117.38.72" dyno=web.1 connect=1ms service=28ms status=200 bytes=468
+2015-07-16T12:21:19.944383+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=quiz2-adg.herokuapp.com request_id=0abdbb88-d910-4243-8f0c-651a52c028c4 fwd="91.117.38.72" dyno=web.1 connect=1ms service=10ms status=200 bytes=684
+2015-07-16T12:21:19.945627+00:00 app[web.1]: [0mGET /stylesheets/style.css [32m200 [0m9.120 ms - 398[0m
+2015-07-16T12:21:19.984281+00:00 app[web.1]: [0mGET /stylesheets/smartphone.css [32m200 [0m16.785 ms - 183[0m
+2015-07-16T12:21:20.170200+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=quiz2-adg.herokuapp.com request_id=bceed611-9618-49f5-93c1-9864a2bf4285 fwd="91.117.38.72" dyno=web.1 connect=1ms service=12ms status=200 bytes=6394
+2015-07-16T12:21:24.121450+00:00 heroku[router]: at=info method=GET path="/quizes/question" host=quiz2-adg.herokuapp.com request_id=7d29bb9a-567b-4a3d-9ded-17fdca39498d fwd="91.117.38.72" dyno=web.1 connect=1ms service=12ms status=200 bytes=1697
+2015-07-16T12:21:24.297198+00:00 heroku[router]: at=info method=GET path="/stylesheets/smartphone.css" host=quiz2-adg.herokuapp.com request_id=d65eb396-fc16-4808-989f-a8bb3d89fa7e fwd="91.117.38.72" dyno=web.1 connect=2ms service=5ms status=304 bytes=235
+2015-07-16T12:21:24.120564+00:00 app[web.1]: [0mGET /quizes/question [32m200 [0m9.900 ms - 1501[0m
+2015-07-16T12:21:24.298191+00:00 app[web.1]: [0mGET /stylesheets/smartphone.css [36m304 [0m3.066 ms - -[0m
+2015-07-16T12:21:24.298938+00:00 heroku[router]: at=info method=GET path="/stylesheets/wide.css" host=quiz2-adg.herokuapp.com request_id=1bbe96cb-b0cd-420c-9f0a-5f60c7b7ea5d fwd="91.117.38.72" dyno=web.1 connect=1ms service=8ms status=304 bytes=236
+2015-07-16T12:21:24.303315+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=quiz2-adg.herokuapp.com request_id=abc3670d-fb1a-4624-9446-5fdbc6f65e3f fwd="91.117.38.72" dyno=web.1 connect=2ms service=6ms status=304 bytes=236
+2015-07-16T12:21:24.297486+00:00 app[web.1]: [0mGET /stylesheets/wide.css [36m304 [0m3.006 ms - -[0m
+2015-07-16T12:21:24.299157+00:00 app[web.1]: [0mGET /stylesheets/style.css [36m304 [0m0.641 ms - -[0m
+2015-07-16T12:27:21.961146+00:00 heroku[api]: Attach DATABASE resource by anaidiazg@gmail.com
+2015-07-16T12:27:21.961146+00:00 heroku[api]: Release v4 created by anaidiazg@gmail.com
+2015-07-16T12:27:22.054157+00:00 heroku[web.1]: State changed from up to starting
+2015-07-16T12:27:23.947567+00:00 heroku[web.1]: Starting process with command `node ./bin/www`
+2015-07-16T12:27:25.280229+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2015-07-16T12:27:26.012536+00:00 app[web.1]: Detected 512 MB available memory, 512 MB limit per process (WEB_MEMORY)
+2015-07-16T12:27:26.012566+00:00 app[web.1]: Recommending WEB_CONCURRENCY=1
+2015-07-16T12:27:27.429861+00:00 heroku[web.1]: Process exited with status 143
+2015-07-16T12:27:27.628619+00:00 heroku[web.1]: State changed from starting to up
+2015-07-16T12:58:02.308814+00:00 heroku[web.1]: Idling
+2015-07-16T12:58:02.309452+00:00 heroku[web.1]: State changed from up to down
+2015-07-16T12:58:05.772740+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2015-07-16T12:58:07.705322+00:00 heroku[web.1]: Process exited with status 143
+2015-07-16T15:16:47.945412+00:00 heroku[api]: Deploy cb8f81c by anaidiazg@gmail.com
+2015-07-16T15:16:47.945412+00:00 heroku[api]: Release v5 created by anaidiazg@gmail.com
+2015-07-16T15:16:48.020991+00:00 heroku[slug-compiler]: Slug compilation started
+2015-07-16T15:16:48.021008+00:00 heroku[slug-compiler]: Slug compilation finished
+2015-07-16T15:17:41.014218+00:00 heroku[web.1]: State changed from down to starting
+2015-07-16T15:17:41.013322+00:00 heroku[web.1]: Unidling
+2015-07-16T15:17:42.720192+00:00 heroku[web.1]: Starting process with command `node ./bin/www`
+2015-07-16T15:17:44.279541+00:00 app[web.1]: Detected 512 MB available memory, 512 MB limit per process (WEB_MEMORY)
+2015-07-16T15:17:44.279561+00:00 app[web.1]: Recommending WEB_CONCURRENCY=1
+2015-07-16T15:17:44.780797+00:00 app[web.1]: 
+2015-07-16T15:17:44.780933+00:00 app[web.1]: /app/models/models.js:37
+2015-07-16T15:17:44.781216+00:00 app[web.1]: sequelize.sync().success(function() {
+2015-07-16T15:17:44.781263+00:00 app[web.1]:                  ^
+2015-07-16T15:17:44.783025+00:00 app[web.1]: TypeError: Object [object Promise] has no method 'success'
+2015-07-16T15:17:44.783029+00:00 app[web.1]:     at Module._compile (module.js:456:26)
+2015-07-16T15:17:44.783028+00:00 app[web.1]:     at Object.<anonymous> (/app/models/models.js:37:18)
+2015-07-16T15:17:44.783030+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
+2015-07-16T15:17:44.783033+00:00 app[web.1]:     at Function.Module._load (module.js:312:12)
+2015-07-16T15:17:44.783032+00:00 app[web.1]:     at Module.load (module.js:356:32)
+2015-07-16T15:17:44.783034+00:00 app[web.1]:     at Module.require (module.js:364:17)
+2015-07-16T15:17:44.783035+00:00 app[web.1]:     at require (module.js:380:17)
+2015-07-16T15:17:44.783037+00:00 app[web.1]:     at Object.<anonymous> (/app/controllers/quiz_controller.js:1:76)
+2015-07-16T15:17:44.783038+00:00 app[web.1]:     at Module._compile (module.js:456:26)
+2015-07-16T15:17:44.783039+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
+2015-07-16T15:17:44.783040+00:00 app[web.1]:     at Module.load (module.js:356:32)
+2015-07-16T15:17:44.783041+00:00 app[web.1]:     at Function.Module._load (module.js:312:12)
+2015-07-16T15:17:44.783042+00:00 app[web.1]:     at Module.require (module.js:364:17)
+2015-07-16T15:17:44.783043+00:00 app[web.1]:     at require (module.js:380:17)
+2015-07-16T15:17:44.783045+00:00 app[web.1]:     at Object.<anonymous> (/app/routes/index.js:4:22)
+2015-07-16T15:17:44.783046+00:00 app[web.1]:     at Module._compile (module.js:456:26)
+2015-07-16T15:17:45.663889+00:00 heroku[web.1]: Process exited with status 8
+2015-07-16T15:17:45.681833+00:00 heroku[web.1]: State changed from starting to crashed
+2015-07-16T15:17:45.683001+00:00 heroku[web.1]: State changed from crashed to starting
+2015-07-16T15:17:48.346922+00:00 heroku[web.1]: Starting process with command `node ./bin/www`
+2015-07-16T15:17:50.723006+00:00 app[web.1]: Detected 512 MB available memory, 512 MB limit per process (WEB_MEMORY)
+2015-07-16T15:17:50.723070+00:00 app[web.1]: Recommending WEB_CONCURRENCY=1
+2015-07-16T15:17:51.697006+00:00 app[web.1]: 
+2015-07-16T15:17:51.697765+00:00 app[web.1]:                  ^
+2015-07-16T15:17:51.697716+00:00 app[web.1]: sequelize.sync().success(function() {
+2015-07-16T15:17:51.699823+00:00 app[web.1]:     at Object.<anonymous> (/app/models/models.js:37:18)
+2015-07-16T15:17:51.699824+00:00 app[web.1]:     at Module._compile (module.js:456:26)
+2015-07-16T15:17:51.699821+00:00 app[web.1]: TypeError: Object [object Promise] has no method 'success'
+2015-07-16T15:17:51.699827+00:00 app[web.1]:     at Module.load (module.js:356:32)
+2015-07-16T15:17:51.699826+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
+2015-07-16T15:17:51.697324+00:00 app[web.1]: /app/models/models.js:37
+2015-07-16T15:17:51.699830+00:00 app[web.1]:     at Module.require (module.js:364:17)
+2015-07-16T15:17:51.699829+00:00 app[web.1]:     at Function.Module._load (module.js:312:12)
+2015-07-16T15:17:51.699831+00:00 app[web.1]:     at require (module.js:380:17)
+2015-07-16T15:17:51.699833+00:00 app[web.1]:     at Object.<anonymous> (/app/controllers/quiz_controller.js:1:76)
+2015-07-16T15:17:51.699834+00:00 app[web.1]:     at Module._compile (module.js:456:26)
+2015-07-16T15:17:51.699836+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
+2015-07-16T15:17:51.699837+00:00 app[web.1]:     at Module.load (module.js:356:32)
+2015-07-16T15:17:51.699839+00:00 app[web.1]:     at Function.Module._load (module.js:312:12)
+2015-07-16T15:17:51.699840+00:00 app[web.1]:     at Module.require (module.js:364:17)
+2015-07-16T15:17:51.699841+00:00 app[web.1]:     at require (module.js:380:17)
+2015-07-16T15:17:51.699842+00:00 app[web.1]:     at Object.<anonymous> (/app/routes/index.js:4:22)
+2015-07-16T15:17:51.699844+00:00 app[web.1]:     at Module._compile (module.js:456:26)
+2015-07-16T15:17:52.631413+00:00 heroku[web.1]: State changed from starting to crashed
+2015-07-16T15:17:52.611677+00:00 heroku[web.1]: Process exited with status 8
+2015-07-16T15:17:55.078095+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=quiz2-adg.herokuapp.com request_id=1d829a1d-ecd2-48a1-a8f0-2ee72e0a71ce fwd="91.117.38.72" dyno= connect= service= status=503 bytes=
+2015-07-16T15:18:42.059499+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=quiz2-adg.herokuapp.com request_id=ae004470-1571-4685-bc71-77a66adcba4f fwd="91.117.38.72" dyno= connect= service= status=503 bytes=
+2015-07-16T15:18:42.815384+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=quiz2-adg.herokuapp.com request_id=cbf1065f-a40f-4575-92c0-298a74286afc fwd="91.117.38.72" dyno= connect= service= status=503 bytes=
+2015-07-16T15:22:18.650734+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=quiz2-adg.herokuapp.com request_id=cd80ff47-bfb6-430d-a548-b490e0e79acd fwd="91.117.38.72" dyno= connect= service= status=503 bytes=
+2015-07-16T15:22:18.960731+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=quiz2-adg.herokuapp.com request_id=f1cff571-6062-431d-bfd8-74f9edc3f354 fwd="91.117.38.72" dyno= connect= service= status=503 bytes=
