@@ -10,18 +10,33 @@ exports.load = function(req,res,next,quizId){
 	}).catch(function(error) {next(error);});
 };
 
+/**
+ * Procesa una query de búsqueda para transformarla en una query SQL. Si la query no existe o está vacía, devuelve null.
+ * @param query Query de búsqueda compuesta por una o más palabras.
+ * @returns {String} Si la query no existe o está vacía devuelve null, en otro caso, devuelve cada palabra pasada a
+ * mayúsculas y separada por un %. Ejemplo Capital Italia se convertiría en %CAPITAL%ITALIA%
+ * @private
+ */
+_procesarSearch = function (query) {
+    if (query) {
+        return query.trim().replace(/(\w+)/g, '%$1%').replace(/\s+/g, '').replace(/%+/g, '%').toUpperCase()
+    }
+    return null;
+};
+
 //GET /quizes
 exports.index = function(req,res){
-	models.Quiz.findAll().then(function(quizes){
+	var search = _procesarSearch(req.query.search),
+		whereSection = search ? {where: ["upper(pregunta) like ?", search]} : {};
+
+	models.Quiz.findAll(whereSection).then(function(quizes){
 		res.render('quizes/index.ejs',{quizes: quizes});
 	})
 };
 
 //GET /quizes/:id
-exports.show = function(req, res){
-	console.log('SHOW');
-	models.Quiz.find(req.params.quizId).then(function(quiz){
-		console.log('QUIZ:' + quiz.id +':'+ quiz.pregunta);
+exports.show = function(req, res){	
+	models.Quiz.find(req.params.quizId).then(function(quiz){		
 		res.render('quizes/show', {quiz: req.quiz})
 	})
 };
